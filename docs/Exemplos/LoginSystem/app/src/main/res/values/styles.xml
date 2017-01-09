@@ -1,0 +1,32 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="ButtonTheme" parent="Widget.AppCompat.Button.Colored">
+
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="android:textColor">#FFFFFF</item>
+
+    </style>
+
+    <style name="FacebookTheme" parent="ButtonTheme">
+
+        <item name="colorButtonNormal">@color/facebook</item>
+        <item name="android:textColor">#FFFFFF</item>
+
+    </style>
+
+    <style name="GoogleTheme" parent="ButtonTheme">
+
+        <item name="colorButtonNormal">@color/google</item>
+        <item name="android:textColor">#FFFFFF</item>
+
+    </style>
+
+</resources>

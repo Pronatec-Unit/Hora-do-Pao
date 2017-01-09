@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Login System</string>
+
+    <string name="FacebookAppId"><!--Facebook App ID--></string>
+    <string name="fb_login_protocol_scheme">fb<!--Facebook App ID--></string>
+
+    <string name="server_client_id"><!--GOOGLE SERVER ID--></string>
+
+    <string name="hint_name">Name</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_password">Password</string>
+    <string name="facebookButton">Facebook</string>
+    <string name="googleButton">Google</string>
+    <string name="loginButton">Log In</string>
+    <string name="recoverButton">Forgot password?</string>
+    <string name="registerButton">Register</string>
+    <string name="toolbar_title">Login System</string>
+    <string name="toolbar_sub_title">Android Samples</string>
+    <string name="register_screen_banner">Create your account</string>
+    <string name="terms_of_use">By clicking REGISTER, you agree to our Terms and that you have read our Data Policy.</string>
+
+</resources>
