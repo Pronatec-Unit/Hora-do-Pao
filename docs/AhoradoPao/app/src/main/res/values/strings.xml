@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">A Hora do Pão</string>
+
+    <!-- Hints -->
+    <string name="hint_name">Nome</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_password">Senha</string>
+    <!-- Hints -->
+
+    <!-- Buttons -->
+    <string name="facebook_button">Facebook</string>
+    <string name="google_button">Google</string>
+    <string name="login_button">Log In</string>
+    <string name="recover_button">Esqueceu a senha?</string>
+    <string name="register_button">Registro</string>
+    <!-- Buttons -->
+
+    <!-- Toolbars -->
+    <string name="toolbar_title">A Hora Pão</string>
+    <string name="toolbar_sub_title">Android Samples</string>
+    <!-- Toolbars -->
+
+    <!-- Labels -->
+    <string name="register_screen_banner">Criar nova conta</string>
+    <string name="terms_of_use">Ao clicar em REGISTRAR, você concorda com nossos Termos e que leu nossa Política de dados.</string>
+    <!-- Labels -->
+
+    <!-- Menu Items -->
+    <string name="menu_item_places">Padarias</string>
+    <string name="menu_item_offers">Promoções</string>
+    <string name="menu_item_orders">Pedidos</string>
+    <string name="menu_item_options">Mais</string>
+    <string name="menu_filter_option">Aplicar Filtro</string>
+    <!-- Menu Items -->
+    
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sapien diam, luctus fermentum elit in, accumsan ultrices mauris. Maecenas sed nisl id velit pharetra consectetur in auctor velit. Phasellus lobortis erat eros, suscipit tempor est pulvinar sit amet. Nulla condimentum pulvinar elit a convallis. Sed iaculis purus vel sem auctor lacinia. Phasellus porta velit eget eros tincidunt aliquet. Morbi ut lectus eget augue dapibus rhoncus. Donec vestibulum erat id ultricies mollis. Phasellus enim erat, porta accumsan auctor ac, eleifend eget lacus. Sed vitae nibh sed dui finibus luctus at efficitur metus.</string>
+
+</resources>

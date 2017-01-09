@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView_bakery"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/pao"/>
+
+        <TextView
+            android:id="@+id/textView_bakery_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView_bakery"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@+id/imageView_bakery"
+            android:textSize="18sp"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_bakery_name"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/imageView_bakery"
+            android:numStars="5"/>
+
+        <TextView
+            android:id="@+id/textView_ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_bakery_name"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/ratingBar"/>
+
+        <TextView
+            android:id="@+id/textView_bakery_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingBar"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/imageView_bakery"/>
+
+        <TextView
+            android:id="@+id/textView_bakery_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView_bakery"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Funciona das 6:30 às 21:30"
+            android:textSize="17sp"/>
+
+        <LinearLayout
+            android:id="@+id/buttonContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_bakery_status"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_rating"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Avaliações"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/button_details"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Informações"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_bakery_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonContainer"
+            android:layout_margin="18dp"
+            android:gravity="center"
+            android:text="@string/lorem_ipsum"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/ratingContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/buttonContainer"
+            android:layout_marginTop="18dp"
+            android:gravity="center_horizontal|top"
+            android:visibility="gone">
+
+            <RatingBar
+                android:id="@+id/ratingBar_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"/>
+
+            <TextView
+                android:id="@+id/textView_ratingBar_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingBar_main"
+                android:layout_marginTop="15dp"
+                android:text="Custo / Benefício"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar_cost"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingBar_main"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/textView_ratingBar_cost"
+                android:numStars="5"
+                android:rating="4.0"/>
+
+            <TextView
+                android:id="@+id/textView_rating_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingBar_main"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/ratingBar_cost"
+                android:text="4.0"/>
+
+            <TextView
+                android:id="@+id/textView_ratingBar_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_rating_cost"
+                android:layout_marginTop="15dp"
+                android:text="Comida"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar_food"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/ratingBar_cost"
+                android:layout_below="@+id/ratingBar_cost"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/textView_ratingBar_food"
+                android:numStars="5"
+                android:rating="4.5"/>
+
+            <TextView
+                android:id="@+id/textView_rating_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_rating_cost"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/ratingBar_food"
+                android:text="4.5"/>
+
+            <TextView
+                android:id="@+id/textView_ratingBar_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_ratingBar_food"
+                android:layout_marginTop="15dp"
+                android:text="Tempo de entrega"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar_time"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/ratingBar_food"
+                android:layout_below="@+id/ratingBar_food"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/textView_ratingBar_time"
+                android:numStars="5"
+                android:rating="3.5"/>
+
+            <TextView
+                android:id="@+id/textView_rating_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_ratingBar_food"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/ratingBar_time"
+                android:text="3.5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_rating_time"
+                android:layout_marginTop="20dp"
+                android:text="* 2.345 avaliações"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold|italic"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
